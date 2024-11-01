@@ -1,4 +1,4 @@
-// App.tsx
+"use client"
 import React from 'react';
 import Gallery from '../components/Gallary';
 

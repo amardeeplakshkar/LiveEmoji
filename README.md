@@ -8,6 +8,16 @@
 LiveEmoji is a delightful collection of animated emoji icons designed for React applications. Bring your user interfaces to life with our vibrant and expressive emojis that seamlessly blend into your projects. With easy-to-use components and customizable options, LiveEmoji empowers developers to enhance their applications with a touch of fun and creativity.
 
 
+## Features
+
+- **Animated emojis**: A curated selection of animated emoji icons
+- **Responsive and customizable**: Easily adjust emoji size and apply custom styling
+- **Optimized for performance**: Smooth animations that perform beautifully across devices
+- **Easy to use**: Import and display emojis with simple, intuitive components
+- **TypeScript support**: For robust typing and better developer experience
+
+
+
 ## Installation
 
 You can install LiveEmoji via npm:

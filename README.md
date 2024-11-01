@@ -8,6 +8,12 @@
 LiveEmoji is a delightful collection of animated emoji icons designed for React applications. Bring your user interfaces to life with our vibrant and expressive emojis that seamlessly blend into your projects. With easy-to-use components and customizable options, LiveEmoji empowers developers to enhance their applications with a touch of fun and creativity.
 
 
+
+## 🔗 Links
+[![portfolio](https://img.shields.io/badge/my_portfolio-000?style=for-the-badge&logo=ko-fi&logoColor=white)](https://amardeep-portfolio.vercel.app/) [![npm](https://img.shields.io/badge/linkedin-0A66C2?style=for-the-badge&logo=linkedin&logoColor=white)](https://in.linkedin.com/in/amardeep-lakshkar-24a339244) [![npm version](https://img.shields.io/npm/v/liveemoji.svg?style=flat-square)](https://www.npmjs.com/package/liveemoji)
+
+
+
 ## Features
 
 - **Animated emojis**: A curated selection of animated emoji icons

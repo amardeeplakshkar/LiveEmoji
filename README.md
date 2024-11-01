@@ -1,36 +1,59 @@
-This is a [Next.js](https://nextjs.org) project bootstrapped with [`create-next-app`](https://nextjs.org/docs/app/api-reference/cli/create-next-app).
+# LiveEmoji
 
-## Getting Started
+LiveEmoji is a delightful collection of animated emoji icons designed for React applications. Bring your user interfaces to life with our vibrant and expressive emojis that seamlessly blend into your projects. With easy-to-use components and customizable options, LiveEmoji empowers developers to enhance their applications with a touch of fun and creativity.
 
-First, run the development server:
+## Installation
+
+You can install LiveEmoji via npm:
 
 ```bash
-npm run dev
-# or
-yarn dev
-# or
-pnpm dev
-# or
-bun dev
-```
+npm install liveemoji
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+Usage
 
-You can start editing the page by modifying `app/page.tsx`. The page auto-updates as you edit the file.
+You can use the LiveEmoji component to display animated emojis dynamically. Here's an example of how to use it in your application:
 
-This project uses [`next/font`](https://nextjs.org/docs/app/building-your-application/optimizing/fonts) to automatically optimize and load [Geist](https://vercel.com/font), a new font family for Vercel.
+javascript
 
-## Learn More
+import React from 'react';
+import LiveEmoji from 'liveemoji';
 
-To learn more about Next.js, take a look at the following resources:
+const App = () => {
+  return (
+    <div>
+      <h1>Welcome to LiveEmoji!</h1>
+      <LiveEmoji icon="smile" className="emoji-class" size={32} />
+    </div>
+  );
+};
 
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
+export default App;
 
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js) - your feedback and contributions are welcome!
+Props
 
-## Deploy on Vercel
+The LiveEmoji component accepts the following props:
+Prop	Type	Description
+icon	string	The name of the emoji to display (e.g., "smile", "heart").
+className	string	Optional custom class for styling the emoji.
+size	number	Optional size of the emoji in pixels (default is 24).
+Example
 
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
+Here’s a complete example of how to use LiveEmoji:
 
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/app/building-your-application/deploying) for more details.
+javascript
+
+import React from 'react';
+import LiveEmoji from 'liveemoji';
+
+const EmojiExample = () => {
+  return (
+    <div>
+      <h2>Here are some emojis:</h2>
+      <LiveEmoji icon="smile" size={32} />
+      <LiveEmoji icon="heart" size={32} />
+      <LiveEmoji icon="thumbs-up" size={32} />
+    </div>
+  );
+};
+
+export default EmojiExample;

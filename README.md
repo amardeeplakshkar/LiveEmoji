@@ -1,6 +1,10 @@
 
 # LiveEmoji
 
+
+![LiveEmoji](https://github.com/amardeeplakshkar/LiveEmoji/blob/main/public/LiveEmojiPoster.png?raw=true)
+
+
 LiveEmoji is a delightful collection of animated emoji icons designed for React applications. Bring your user interfaces to life with our vibrant and expressive emojis that seamlessly blend into your projects. With easy-to-use components and customizable options, LiveEmoji empowers developers to enhance their applications with a touch of fun and creativity.
 
 
@@ -56,4 +60,5 @@ const EmojiExample = () => {
 export default EmojiExample;
 
 ```
+
 

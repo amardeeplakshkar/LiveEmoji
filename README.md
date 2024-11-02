@@ -40,9 +40,9 @@ You can use the LiveEmoji component to display animated emojis dynamically. Here
 import { LiveEmoji } from 'liveemoji';
 ```
 ```javascript
-<LiveEmoji icon="ConfusedFace" size={32} />
-<LiveEmoji icon="ClownFace" size={32} />
-<LiveEmoji icon="FaceWithPeekingEye" size={32} />
+<LiveEmoji icon="ConfusedFace" size={'32'} />
+<LiveEmoji icon="ClownFace" size={"32"} />
+<LiveEmoji icon="FaceWithPeekingEye" size={"32"} />
 ```
 ## Props
 
@@ -52,7 +52,7 @@ The `LiveEmoji` component accepts the following props:
 |------------|---------|------------------------------------------------------------------|
 | `icon`     | string  | The name of the emoji to display in `PascelCase` only (e.g., "DizzyFace", "ClownFace").     |
 | `className`| string  | Optional custom class or TailwindCSS for styling the emoji.                    |
-| `size`     | number  | Optional size of the emoji in pixels (default is 24).          |
+| `size`     | string  | Optional size of the emoji in pixels (default is 24).          |
 
 ## Example
 
@@ -66,9 +66,9 @@ const EmojiExample = () => {
   return (
     <div>
       <h2>Here are some emojis:</h2>
-      <LiveEmoji icon="ConfusedFace" size={32} />
-      <LiveEmoji icon="ClownFace" size={32} />
-      <LiveEmoji icon="FaceWithPeekingEye" size={32} />
+      <LiveEmoji icon="ConfusedFace" size={"32"} />
+      <LiveEmoji icon="ClownFace" size={"32"} />
+      <LiveEmoji icon="FaceWithPeekingEye" size={"32"} />
     </div>
   );
 };

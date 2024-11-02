@@ -10,7 +10,7 @@ const Gallery = () => {
   const [visibleCount, setVisibleCount] = useState(12);
 
   const handleCopy = (name: string) => {
-    navigator.clipboard.writeText(`<LiveEmoji icon={${name}} size={40} />`);
+    navigator.clipboard.writeText(`<LiveEmoji icon={${name}} size={"40"} />`);
     toast.dark(`${name} copied!`, { theme: 'dark' });
   };
 
@@ -40,7 +40,7 @@ const Gallery = () => {
       <div className="grid grid-cols-2 gap-4 md:grid-cols-3 lg:grid-cols-4">
         {Object.entries(emojiData).slice(0, visibleCount).map(([name, iconUrl]) => (
           <div key={name} className="flex flex-col items-center p-2 border rounded-lg shadow-sm emoji-card">
-            <LiveEmoji icon={name as keyof typeof emojiData} size={80} />
+            <LiveEmoji icon={name as keyof typeof emojiData} size={"2.5em"} />
             <span className="mt-2 font-semibold">
               {name.length > 12 ? `${name.slice(0, 12)}...` : name}
             </span>

@@ -67,6 +67,34 @@ const products = [
     thumbnail:
       "https://raw.githubusercontent.com/amardeeplakshkar/LiveEmoji/refs/heads/main/public/Thumbnail/LiveEmojiRepo2.png",
   },
+  {
+    id: 3,
+    title: "LiveEmoji",
+    link: "https://github.com/amardeeplakshkar/LiveEmoji",
+    thumbnail:
+      "https://raw.githubusercontent.com/amardeeplakshkar/LiveEmoji/refs/heads/main/public/Thumbnail/LiveEmojiRepo3.png",
+  },
+  {
+    id: 4,
+    title: "LiveEmoji",
+    link: "https://github.com/amardeeplakshkar/LiveEmoji",
+    thumbnail:
+      "https://raw.githubusercontent.com/amardeeplakshkar/LiveEmoji/refs/heads/main/public/Thumbnail/LiveEmojiRepo4.png",
+  },
+  {
+    id: 5,
+    title: "LiveEmoji",
+    link: "https://github.com/amardeeplakshkar/LiveEmoji",
+    thumbnail:
+      "https://raw.githubusercontent.com/amardeeplakshkar/LiveEmoji/refs/heads/main/public/Thumbnail/LiveEmojiRepo5.png",
+  },
+  {
+    id: 6,
+    title: "LiveEmoji",
+    link: "https://github.com/amardeeplakshkar/LiveEmoji",
+    thumbnail:
+      "https://raw.githubusercontent.com/amardeeplakshkar/LiveEmoji/refs/heads/main/public/Thumbnail/LiveEmojiRepo3.png",
+  },
 ];
 export default function Page() {
   const router = useRouter();

@@ -1,103 +1,93 @@
 "use client";
 import { HeroParallax } from "@/components/ui/hero-parallax";
 import React from "react";
+import { useRouter } from "next/navigation";
 
 export function HeroParallaxDemo() {
-  return <HeroParallax products={products} />;
+  const router = useRouter();
+
+  const navigateToGallery = () => {
+    router.push("/Gallary");
+  };
+
+  return (
+    <>
+      <HeroParallax products={products} />
+      <div className="grid my-10 place-items-center">
+        <button onClick={navigateToGallery} className="p-2 mt-4 text-white bg-blue-500 rounded ">
+          Go to Gallery
+        </button>
+      </div>
+
+    </>
+  );
 }
+
 export const products = [
   {
-    title: "Moonbeam",
-    link: "https://gomoonbeam.com",
+    id: 1,
+    title: "LiveEmoji",
+    link: "https://github.com/amardeeplakshkar/LiveEmoji",
     thumbnail:
-      "",
+      "https://raw.githubusercontent.com/amardeeplakshkar/LiveEmoji/refs/heads/main/public/Thumbnail/LiveEmojiRepo1.png",
   },
   {
-    title: "Cursor",
-    link: "https://cursor.so",
+    id: 2,
+    title: "LiveEmoji",
+    link: "https://github.com/amardeeplakshkar/LiveEmoji",
     thumbnail:
-      "https://aceternity.com/images/products/thumbnails/new/cursor.png",
+      "https://raw.githubusercontent.com/amardeeplakshkar/LiveEmoji/refs/heads/main/public/Thumbnail/LiveEmojiRepo2.png",
   },
   {
-    title: "Rogue",
-    link: "https://userogue.com",
+    id: 3,
+    title: "LiveEmoji",
+    link: "https://github.com/amardeeplakshkar/LiveEmoji",
     thumbnail:
-      "https://aceternity.com/images/products/thumbnails/new/rogue.png",
-  },
-
-  {
-    title: "Editorially",
-    link: "https://editorially.org",
-    thumbnail:
-      "https://aceternity.com/images/products/thumbnails/new/editorially.png",
-  },
-  {
-    title: "Editrix AI",
-    link: "https://editrix.ai",
-    thumbnail:
-      "https://aceternity.com/images/products/thumbnails/new/editrix.png",
-  },
-  {
-    title: "Pixel Perfect",
-    link: "https://app.pixelperfect.quest",
-    thumbnail:
-      "https://aceternity.com/images/products/thumbnails/new/pixelperfect.png",
+      "https://raw.githubusercontent.com/amardeeplakshkar/LiveEmoji/refs/heads/main/public/Thumbnail/LiveEmojiRepo3.png",
   },
 
   {
-    title: "Algochurn",
-    link: "https://algochurn.com",
+    id: 4,
+    title: "LiveEmoji",
+    link: "https://github.com/amardeeplakshkar/LiveEmoji",
     thumbnail:
-      "https://aceternity.com/images/products/thumbnails/new/algochurn.png",
+      "https://raw.githubusercontent.com/amardeeplakshkar/LiveEmoji/refs/heads/main/public/Thumbnail/LiveEmojiRepo4.png",
   },
   {
-    title: "Aceternity UI",
-    link: "https://ui.aceternity.com",
+    id: 5,
+    title: "LiveEmoji",
+    link: "https://github.com/amardeeplakshkar/LiveEmoji",
     thumbnail:
-      "https://aceternity.com/images/products/thumbnails/new/aceternityui.png",
+      "https://raw.githubusercontent.com/amardeeplakshkar/LiveEmoji/refs/heads/main/public/Thumbnail/LiveEmojiRepo5.png",
   },
   {
-    title: "Tailwind Master Kit",
-    link: "https://tailwindmasterkit.com",
+    id: 6,
+    title: "LiveEmoji",
+    link: "https://github.com/amardeeplakshkar/LiveEmoji",
     thumbnail:
-      "https://aceternity.com/images/products/thumbnails/new/tailwindmasterkit.png",
-  },
-  {
-    title: "SmartBridge",
-    link: "https://smartbridgetech.com",
-    thumbnail:
-      "https://aceternity.com/images/products/thumbnails/new/smartbridge.png",
-  },
-  {
-    title: "Renderwork Studio",
-    link: "https://renderwork.studio",
-    thumbnail:
-      "https://aceternity.com/images/products/thumbnails/new/renderwork.png",
+      "https://raw.githubusercontent.com/amardeeplakshkar/LiveEmoji/refs/heads/main/public/Thumbnail/LiveEmojiRepo3.png",
   },
 
   {
-    title: "Creme Digital",
-    link: "https://cremedigital.com",
+    id: 7,
+    title: "LiveEmoji",
+    link: "https://github.com/amardeeplakshkar/LiveEmoji",
     thumbnail:
-      "https://aceternity.com/images/products/thumbnails/new/cremedigital.png",
+      "https://raw.githubusercontent.com/amardeeplakshkar/LiveEmoji/refs/heads/main/public/Thumbnail/LiveEmojiRepo6.png",
   },
   {
-    title: "Golden Bells Academy",
-    link: "https://goldenbellsacademy.com",
+    id: 8,
+    title: "LiveEmoji",
+    link: "https://github.com/amardeeplakshkar/LiveEmoji",
     thumbnail:
-      "https://aceternity.com/images/products/thumbnails/new/goldenbellsacademy.png",
+      "https://raw.githubusercontent.com/amardeeplakshkar/LiveEmoji/refs/heads/main/public/Thumbnail/LiveEmojiRepo1.png",
   },
   {
-    title: "Invoker Labs",
-    link: "https://invoker.lol",
+    id: 9,
+    title: "LiveEmoji",
+    link: "https://github.com/amardeeplakshkar/LiveEmoji",
     thumbnail:
-      "https://aceternity.com/images/products/thumbnails/new/invoker.png",
-  },
-  {
-    title: "E Free Invoice",
-    link: "https://efreeinvoice.com",
-    thumbnail:
-      "https://aceternity.com/images/products/thumbnails/new/efreeinvoice.png",
+      "https://raw.githubusercontent.com/amardeeplakshkar/LiveEmoji/refs/heads/main/public/Thumbnail/LiveEmojiRepo2.png",
   },
 ];
 

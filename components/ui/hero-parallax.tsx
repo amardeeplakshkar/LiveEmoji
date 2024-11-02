@@ -9,6 +9,8 @@ import {
 } from "framer-motion";
 import Image from "next/image";
 import Link from "next/link";
+import { Cover } from "./cover";
+import { LiveEmoji } from "liveemoji";
 
 export const HeroParallax = ({
   products,
@@ -17,6 +19,7 @@ export const HeroParallax = ({
     title: string;
     link: string;
     thumbnail: string;
+    id:number
   }[];
 }) => {
   const firstRow = products.slice(0, 5);
@@ -74,7 +77,7 @@ export const HeroParallax = ({
             <ProductCard
               product={product}
               translate={translateX}
-              key={product.title}
+              key={product.id}
             />
           ))}
         </motion.div>
@@ -83,7 +86,7 @@ export const HeroParallax = ({
             <ProductCard
               product={product}
               translate={translateXReverse}
-              key={product.title}
+              key={product.id}
             />
           ))}
         </motion.div>
@@ -92,7 +95,7 @@ export const HeroParallax = ({
             <ProductCard
               product={product}
               translate={translateX}
-              key={product.title}
+              key={product.id}
             />
           ))}
         </motion.div>
@@ -105,7 +108,7 @@ export const Header = () => {
   return (
     <div className="relative top-0 left-0 w-full px-4 py-20 mx-auto max-w-7xl md:py-40">
       <h1 className="text-3xl font-bold md:text-7xl dark:text-white">
-        The Ultimate <br /> Animated Emoji Library
+        The Ultimate <br /> <Cover>Animated Emoji Library <LiveEmoji icon={"ExplodingHead"} size={"1.2em"} /></Cover> 
       </h1>
       <p className="max-w-2xl mt-8 text-base md:text-xl dark:text-neutral-200">
     With LiveEmoji, create stunning, expressive UIs using beautifully animated emojis. Our library offers a vast collection of dynamic emoji icons, built with the latest React technologies and a passion for seamless design. Perfect for adding personality to any project, LiveEmoji enables developers to easily integrate animated emojis that are responsive, high-performance, and visually engaging. Effortlessly customizable and supported by TypeScript, LiveEmoji is the ultimate tool to bring a lively, human touch to your applications!
@@ -134,21 +137,21 @@ export const ProductCard = ({
         y: -20,
       }}
       key={product.title}
-      className="group/product h-96 w-[30rem] relative flex-shrink-0"
+      className="group/product h-96 w-[30rem] relative flex-shrink-0 rounded-md"
     >
       <Link
         href={product.link}
-        className="block group-hover/product:shadow-2xl "
+        className="block rounded-md group-hover/product:shadow-2xl"
       >
         <Image
           src={product.thumbnail}
           height="600"
           width="600"
-          className="absolute inset-0 object-cover object-left-top w-full h-full"
+          className="absolute inset-0 object-cover object-left-top w-full h-full rounded-md"
           alt={product.title}
         />
       </Link>
-      <div className="absolute inset-0 w-full h-full bg-black opacity-0 pointer-events-none group-hover/product:opacity-80"></div>
+      <div className="absolute inset-0 w-full h-full bg-black rounded-md opacity-0 pointer-events-none group-hover/product:opacity-80"></div>
       <h2 className="absolute text-white opacity-0 bottom-4 left-4 group-hover/product:opacity-100">
         {product.title}
       </h2>

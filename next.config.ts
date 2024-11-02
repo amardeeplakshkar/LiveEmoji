@@ -5,8 +5,8 @@ const nextConfig: NextConfig = {
     remotePatterns: [
       {
         protocol: "https",
-        hostname: "aceternity.com",
-        pathname: "/images/products/thumbnails/new/**",
+        hostname: "raw.githubusercontent.com",
+        pathname: "/amardeeplakshkar/LiveEmoji/refs/heads/main/public/Thumbnail/**",
       },
     ],
   },

@@ -72,7 +72,7 @@ export default function Page() {
   const router = useRouter();
 
   const navigateToGallery = () => {
-    router.push("/Gallery");
+    router.push("/Gallary");
   };
 
   return (

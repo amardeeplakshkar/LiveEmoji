@@ -3,26 +3,7 @@ import { HeroParallax } from "@/components/ui/hero-parallax";
 import React from "react";
 import { useRouter } from "next/navigation";
 
-export default function Page() {
-  const router = useRouter();
-
-  const navigateToGallery = () => {
-    router.push("/Gallery");
-  };
-
-  return (
-    <>
-      <HeroParallax products={products} />
-      <div className="grid my-10 place-items-center">
-        <button onClick={navigateToGallery} className="p-2 mt-4 text-white bg-blue-500 rounded">
-          Go to Gallery
-        </button>
-      </div>
-    </>
-  );
-}
-
-export const products = [
+const products = [
   {
     id: 1,
     title: "LiveEmoji",
@@ -87,3 +68,21 @@ export const products = [
       "https://raw.githubusercontent.com/amardeeplakshkar/LiveEmoji/refs/heads/main/public/Thumbnail/LiveEmojiRepo2.png",
   },
 ];
+export default function Page() {
+  const router = useRouter();
+
+  const navigateToGallery = () => {
+    router.push("/Gallery");
+  };
+
+  return (
+    <>
+      <HeroParallax products={products} />
+      <div className="grid my-10 place-items-center">
+        <button onClick={navigateToGallery} className="p-2 mt-4 text-white bg-blue-500 rounded">
+          Go to Gallery
+        </button>
+      </div>
+    </>
+  );
+}

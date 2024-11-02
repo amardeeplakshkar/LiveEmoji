@@ -107,7 +107,7 @@ export const HeroParallax = ({
 export const Header = () => {
   return (
     <div className="relative top-0 left-0 w-full px-4 py-20 mx-auto max-w-7xl md:py-40">
-      <h1 className="text-3xl font-bold md:text-7xl dark:text-white">
+      <h1 className="text-2xl font-bold md:text-7xl dark:text-white">
         The Ultimate <br /> <Cover>Animated Emoji Library <LiveEmoji icon={"ExplodingHead"} size={"1.2em"} /></Cover> 
       </h1>
       <p className="max-w-2xl mt-8 text-base md:text-xl dark:text-neutral-200">
